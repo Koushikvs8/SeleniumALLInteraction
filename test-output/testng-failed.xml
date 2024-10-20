@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MouseKeyboardActions">
+      <class name="JavaSctripExecuter">
         <methods>
-          <include name="MouseKeywordActions"/>
+          <include name="JavaSctripExecuter"/>
         </methods>
-      </class> <!-- MouseKeyboardActions -->
+      </class> <!-- JavaSctripExecuter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
