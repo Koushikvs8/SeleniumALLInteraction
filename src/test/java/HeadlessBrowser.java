@@ -21,7 +21,7 @@ void Scrolling_Page() throws InterruptedException
 options.addArguments("--headless");
 options.addArguments("--no-sandbox");
 options.addArguments("--disable-dev-shm-usage");
-///////////////////////////////
+/////////////////////////////////////////
 		driver=new ChromeDriver(options);
     driver.get("https://live.techpanda.org/index.php/");
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
