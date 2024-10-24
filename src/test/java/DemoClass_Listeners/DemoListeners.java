@@ -39,11 +39,7 @@ public class DemoListeners {
     void Validate_Navigation_HomeScreen() throws InterruptedException
     {
     	driver.findElement(By.xpath("//div[@class='logged-user-w']//img")).isDisplayed();
-    	  TakesScreenshot ts=(TakesScreenshot)driver;
-    	    File sourcefile =ts.getScreenshotAs(OutputType.FILE);
-    	    File targetfileFile = new File(System.getProperty("user.dir")+"\\screenshots\\"+System.currentTimeMillis()+"SS.png");
-    	    sourcefile.renameTo(targetfileFile);
-    	
+    	Assert.assertTrue(false);
     }
     @Test(priority = 2)
     void Fail() throws InterruptedException

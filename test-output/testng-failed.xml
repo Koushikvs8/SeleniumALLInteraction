@@ -7,6 +7,7 @@
         <methods>
           <include name="Fail"/>
           <include name="Setup"/>
+          <include name="Validate_Navigation_HomeScreen"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- DemoClass_Listeners.DemoListeners -->
