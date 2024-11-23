@@ -1,3 +1,4 @@
+package SeleniumInteractions;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -5,24 +6,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
-public class HeadlessBrowser {
+public class Scrollingpage {
 WebDriver driver;
 	
 	@Test
 void Scrolling_Page() throws InterruptedException
-
-
-{   
-		///////////////////////// For headless /////////////
-		ChromeOptions options= new ChromeOptions();
-options.addArguments("--headless");
-options.addArguments("--no-sandbox");
-options.addArguments("--disable-dev-shm-usage");
-/////////////////////////////////////////
-		driver=new ChromeDriver(options);
+{  driver=new ChromeDriver();
     driver.get("https://live.techpanda.org/index.php/");
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     driver.manage().window().maximize();
@@ -30,7 +21,6 @@ options.addArguments("--disable-dev-shm-usage");
     JavascriptExecutor js=(JavascriptExecutor)driver;
     js.executeScript("arguments[0].scrollIntoView(true);", element);
     Thread.sleep(3000);
-    System.out.println("Successfull");
 	driver.close();
 }
 }

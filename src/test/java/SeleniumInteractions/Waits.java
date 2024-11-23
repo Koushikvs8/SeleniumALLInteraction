@@ -1,26 +1,26 @@
+package SeleniumInteractions;
 import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import net.bytebuddy.implementation.bytecode.Duplication;
-
-public class Interacting_with_Elements {
+public class Waits {
 	static WebDriver driver ;
 	@Test
-	void Interaction_element() throws InterruptedException
+	void Waits_() throws InterruptedException
 	{    driver=new ChromeDriver();
 		driver.get("https://ultimateqa.com/complicated-page");
 		driver.get("https://ultimateqa.com/complicated-page");
 		driver.getTitle();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));//implicitlyWait
 		////clicking the element
 		System.out.println(driver.findElement(By.xpath("//a[@class='et_pb_button et_pb_button_0 et_pb_bg_layout_light']")).getAttribute("class"));
 		boolean status= driver.findElement(By.xpath("//a[@class='et_pb_button et_pb_button_0 et_pb_bg_layout_light']")).isDisplayed();
@@ -33,11 +33,13 @@ public class Interacting_with_Elements {
 
 	        // Perform the mouse hover action
 	        actions.moveToElement(E).perform();
-	        Thread.sleep(1000);
+	        Thread.sleep(1000); //static wait
 		}
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@id='et_pb_contact_name_0']")).sendKeys("koushik");
-		Thread.sleep(1000);
+		//Explicite wait//////////////////////////////////////////////
+		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='et_pb_contact_name_0']"))).sendKeys("koushik");
+		
+
 		driver.findElement(By.xpath("//input[@id='et_pb_contact_email_0']")).sendKeys("Koushik123");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//textarea[@id='et_pb_contact_message_0']")).sendKeys("Please hire me as early as possible");
@@ -46,5 +48,4 @@ public class Interacting_with_Elements {
 	   driver.close();
 		
 	}
-
 }
