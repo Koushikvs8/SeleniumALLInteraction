@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-03T16:50:44 IST" name="Default suite" finished-at="2024-12-03T16:50:50 IST" duration-ms="6723">
+  <suite started-at="2024-12-03T20:07:50 IST" name="Default suite" finished-at="2024-12-03T20:08:04 IST" duration-ms="14362">
     <groups>
     </groups>
-    <test started-at="2024-12-03T16:50:44 IST" name="Default test" finished-at="2024-12-03T16:50:50 IST" duration-ms="6723">
-      <class name="PrcticeAllInteraction.FileploadFile">
-        <test-method signature="uploadFile()[pri:0, instance:PrcticeAllInteraction.FileploadFile@22ef9844]" started-at="2024-12-03T16:50:44 IST" name="uploadFile" finished-at="2024-12-03T16:50:50 IST" duration-ms="6669" status="PASS">
+    <test started-at="2024-12-03T20:07:50 IST" name="Default test" finished-at="2024-12-03T20:08:04 IST" duration-ms="14362">
+      <class name="PrcticeAllInteraction.mouseAction">
+        <test-method signature="MouseActions()[pri:0, instance:PrcticeAllInteraction.mouseAction@1da2cb77]" started-at="2024-12-03T20:07:50 IST" name="MouseActions" finished-at="2024-12-03T20:08:04 IST" duration-ms="14304" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadFile -->
-      </class> <!-- PrcticeAllInteraction.FileploadFile -->
+        </test-method> <!-- MouseActions -->
+      </class> <!-- PrcticeAllInteraction.mouseAction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

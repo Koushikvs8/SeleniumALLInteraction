@@ -1,6 +1,7 @@
 package PrcticeAllInteraction;
 
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -19,26 +20,25 @@ public class Navigatetion {
     	driver.manage().window().maximize();
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     	driver.get("https://testautomationpractice.blogspot.com/");
-    	driver.findElement(By.xpath("//a[normalize-space()='Download Files']")).click();
-    	driver.navigate().back();
-    	driver.findElement(By.xpath("//a[normalize-space()='merrymoonmary']")).click();
-    	driver.findElement(By.xpath("//a[normalize-space()='merrymoonmary']")).click();
-    	swichWindow();
-    	driver.findElement(By.xpath("//span[@class='eKxDK0HhV4OsyBuRLddo']//a[@class='kv9h1Ky2YMlFhipkWdoy'][normalize-space()='Sign in']")).click();
+    	String parentWindow=driver.getWindowHandle();
+    	driver.findElement(By.xpath("//button[@id='PopUp']")).click();
+    	//driver.findElement(By.xpath("//a[normalize-space()='merrymoonmary']")).click();
+    	swichWindow(parentWindow);
+    
     	
 	}
     
     
     
-    public static void  swichWindow()
+    public static void  swichWindow(String parentWindow)
     {
         Set<String> windows =driver.getWindowHandles();
-       
+  
+	
         for (String windowHandle : windows) {
             driver.switchTo().window(windowHandle);
-            
         }
-
+      
     	
     }
 	
