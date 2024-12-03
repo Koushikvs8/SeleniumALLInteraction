@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGTrails.DemoDataprovider">
+      <class name="DemoClass_Listeners.DemoListeners">
         <methods>
-          <include name="login"/>
+          <include name="Fail"/>
           <include name="Setup"/>
+          <include name="Validate_Navigation_HomeScreen"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- TestNGTrails.DemoDataprovider -->
+      </class> <!-- DemoClass_Listeners.DemoListeners -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
