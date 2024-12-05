@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PrcticeAllInteraction.Navigatetion">
+      <class name="PrcticeAllInteraction.Iframe">
         <methods>
-          <include name="Navigater"/>
+          <include name="frameSwich"/>
         </methods>
-      </class> <!-- PrcticeAllInteraction.Navigatetion -->
+      </class> <!-- PrcticeAllInteraction.Iframe -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
