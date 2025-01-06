@@ -4,14 +4,17 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 /// Data providerby object arry //////
-	@DataProvider(name="login",parallel = true)
-	public static Object[][] loginData()
+	
+	@DataProvider(name="ddt")
+	public Object[][] Data()
 	{
-		Object[][] data= {
-				{"koushik","Kou@12345"},
-				{"swathi_salimath" ,"Swathi@1234"},
-				{"salimath" ,"Swathi@1sdf234"}
+		Object[][] data= {{"koushik", "gfgfhjg"}
+		//{"swathi1233", "gfgfhjg"},
+		//{"swfhjfj", "gfgfhjg"}
 		};
+		
+		
+		
 		return data;
 	}
 }

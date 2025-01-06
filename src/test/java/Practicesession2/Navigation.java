@@ -48,7 +48,7 @@ public class Navigation {
 		 //file upload
 		 driver.findElement(By.xpath("//input[@id='singleFileInput']")).sendKeys(System.getProperty("user.dir")+"\\src\\test\\java\\Utilities");
 		 Thread.sleep(2000);
-		// driver.quit(); 
+		driver.quit(); 
 	 }
   
    public  WebElement ExplicitWaite(WebElement webelement)
