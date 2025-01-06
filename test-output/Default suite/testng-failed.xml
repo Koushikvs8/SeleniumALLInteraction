@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGPractice.BaseClass">
+      <class name="Practicesession2.iframe">
         <methods>
-          <include name="TearDown"/>
-          <include name="login" invocation-numbers="1 2"/>
-          <include name="Setup"/>
+          <include name="frameSwich"/>
         </methods>
-      </class> <!-- TestNGPractice.BaseClass -->
+      </class> <!-- Practicesession2.iframe -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
