@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PrcticeAllInteraction.Waites">
+      <class name="Practicesession2.iframe">
         <methods>
-          <include name="KeyboardAction"/>
+          <include name="frameSwich"/>
         </methods>
-      </class> <!-- PrcticeAllInteraction.Waites -->
+      </class> <!-- Practicesession2.iframe -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

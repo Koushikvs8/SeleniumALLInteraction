@@ -21,7 +21,6 @@ public class Dropdown {
 		WebElement dropC=driver.findElement(By.xpath("//select[@id='country']"));
 		Select options=new Select(dropC);
 		
-		Thread.sleep(2000);
 	List<WebElement> option = options.getOptions();
 		
 		for(int i =0;i<=(option.size()-1) ;i++)
@@ -34,7 +33,7 @@ public class Dropdown {
 		Select options1=new Select(dropC1);
 		for(int i =0;i<=(3) ;i++)
 		{ Thread.sleep(1000);
-			options1.selectByIndex(i);
+			options1.selectByVisibleText("Red");
 			
 		}
 		 driver.close();
