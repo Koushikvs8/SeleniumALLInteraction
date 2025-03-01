@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-06T20:48:00 IST" name="Default suite" finished-at="2025-01-06T20:48:12 IST" duration-ms="11548">
+  <suite started-at="2025-03-01T18:23:26 IST" name="Suite" finished-at="2025-03-01T18:25:12 IST" duration-ms="106425">
     <groups>
     </groups>
-    <test started-at="2025-01-06T20:48:00 IST" name="Default test" finished-at="2025-01-06T20:48:12 IST" duration-ms="11548">
-      <class name="Practicesession2.iframe">
-        <test-method signature="frameSwich()[pri:0, instance:Practicesession2.iframe@a530d0a]" started-at="2025-01-06T20:48:00 IST" name="frameSwich" finished-at="2025-01-06T20:48:12 IST" duration-ms="11449" status="FAIL">
-          <exception class="java.util.NoSuchElementException">
+    <test started-at="2025-03-01T18:23:26 IST" name="Test" finished-at="2025-03-01T18:25:12 IST" duration-ms="106425">
+      <class name="PrcticeAllInteraction.Iframe">
+        <test-method signature="frameSwich()[pri:0, instance:PrcticeAllInteraction.Iframe@593aaf41]" started-at="2025-03-01T18:24:46 IST" name="frameSwich" finished-at="2025-03-01T18:25:05 IST" duration-ms="18824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frameSwich -->
+      </class> <!-- PrcticeAllInteraction.Iframe -->
+      <class name="PrcticeAllInteraction.FileploadFile">
+        <test-method signature="uploadFile()[pri:0, instance:PrcticeAllInteraction.FileploadFile@5a56cdac]" started-at="2025-03-01T18:25:05 IST" name="uploadFile" finished-at="2025-03-01T18:25:12 IST" duration-ms="7975" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.xpath: //input[@id='singleFileInput']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException
-at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1025)
-at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:1046)
-at Practicesession2.iframe.swictchto(iframe.java:49)
-at Practicesession2.iframe.frameSwich(iframe.java:26)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@id='singleFileInput']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at PrcticeAllInteraction.FileploadFile.uploadFile(FileploadFile.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -43,11 +61,95 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- frameSwich -->
-      </class> <!-- Practicesession2.iframe -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- uploadFile -->
+      </class> <!-- PrcticeAllInteraction.FileploadFile -->
+      <class name="PrcticeAllInteraction.Dropdown">
+        <test-method signature="Navigater()[pri:0, instance:PrcticeAllInteraction.Dropdown@54bff557]" started-at="2025-03-01T18:24:35 IST" name="Navigater" finished-at="2025-03-01T18:24:46 IST" duration-ms="10736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigater -->
+      </class> <!-- PrcticeAllInteraction.Dropdown -->
+      <class name="PrcticeAllInteraction.TakeScreenShot">
+        <test-method signature="KeyboardAction()[pri:0, instance:PrcticeAllInteraction.TakeScreenShot@1af2d44a]" started-at="2025-03-01T18:23:26 IST" name="KeyboardAction" finished-at="2025-03-01T18:23:34 IST" duration-ms="7971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyboardAction -->
+      </class> <!-- PrcticeAllInteraction.TakeScreenShot -->
+      <class name="PrcticeAllInteraction.Navigatetion">
+        <test-method signature="Navigater()[pri:0, instance:PrcticeAllInteraction.Navigatetion@485966cc]" started-at="2025-03-01T18:23:57 IST" name="Navigater" finished-at="2025-03-01T18:24:04 IST" duration-ms="7892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigater -->
+      </class> <!-- PrcticeAllInteraction.Navigatetion -->
+      <class name="PrcticeAllInteraction.KeyboardActions">
+        <test-method signature="KeyboardAction()[pri:0, instance:PrcticeAllInteraction.KeyboardActions@5d0a1059]" started-at="2025-03-01T18:23:49 IST" name="KeyboardAction" finished-at="2025-03-01T18:23:57 IST" duration-ms="7991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyboardAction -->
+      </class> <!-- PrcticeAllInteraction.KeyboardActions -->
+      <class name="PrcticeAllInteraction.mouseAction">
+        <test-method signature="MouseActions()[pri:0, instance:PrcticeAllInteraction.mouseAction@c88a337]" started-at="2025-03-01T18:23:34 IST" name="MouseActions" finished-at="2025-03-01T18:23:49 IST" duration-ms="14450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseActions -->
+      </class> <!-- PrcticeAllInteraction.mouseAction -->
+      <class name="PrcticeAllInteraction.Waites">
+        <test-method signature="KeyboardAction()[pri:0, instance:PrcticeAllInteraction.Waites@1de76cc7]" started-at="2025-03-01T18:24:04 IST" name="KeyboardAction" finished-at="2025-03-01T18:24:35 IST" duration-ms="30519" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //input[@id='et_pb_contact_name_0'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53127}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53127/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a07d19b012ea514def3566268864a65]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@id='et_pb_contact_name_0'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53127}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53127/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a07d19b012ea514def3566268864a65
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at PrcticeAllInteraction.Waites.KeyboardAction(Waites.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyboardAction -->
+      </class> <!-- PrcticeAllInteraction.Waites -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

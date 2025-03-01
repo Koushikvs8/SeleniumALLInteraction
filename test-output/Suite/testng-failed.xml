@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="Test1(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestNGPractice.BaseClass">
+      <class name="PrcticeAllInteraction.Waites">
         <methods>
-          <include name="TearDown"/>
-          <include name="login" invocation-numbers="1 0"/>
-          <include name="Setup"/>
+          <include name="KeyboardAction"/>
         </methods>
-      </class> <!-- TestNGPractice.BaseClass -->
+      </class> <!-- PrcticeAllInteraction.Waites -->
+      <class name="PrcticeAllInteraction.FileploadFile">
+        <methods>
+          <include name="uploadFile"/>
+        </methods>
+      </class> <!-- PrcticeAllInteraction.FileploadFile -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
